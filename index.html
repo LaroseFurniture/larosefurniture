@@ -1,51 +1,136 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>La Rose Furniture</title>
+
   <style>
-    body{margin:0;font-family:Arial;background:#f5f5f5;color:#111}
-    header{background:#111;color:#fff;padding:40px 20px;text-align:center}
-    section{background:#fff;margin:20px auto;padding:20px;border-radius:12px;max-width:900px}
-    h1,h2{text-align:center}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .card{border:1px solid #eee;border-radius:10px;padding:14px;text-align:center}
-    footer{text-align:center;padding:20px;color:#666}
-    @media(max-width:800px){.grid{grid-template-columns:1fr}}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    section {
+      background: #fff;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 14px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+      font-weight: bold;
+      background: #fafafa;
+    }
+
+    .contact {
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .contact p {
+      margin: 8px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      header h1 {
+        font-size: 32px;
+      }
+    }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>La Rose Furniture</h1>
-  <p>Quality Furniture in Nashville</p>
+  <p>Quality Furniture & Elegant Designs in Nashville</p>
 </header>
 
 <section>
-  <h2>عنّا</h2>
-  <p style="text-align:center">
-    نقدّم تشكيلة مختارة من الأثاث العصري بجودة عالية وخيارات دفع مرنة.
+  <h2>About Us</h2>
+  <p style="text-align:center;">
+    La Rose Furniture offers a curated selection of stylish and modern furniture.
+    We focus on quality, comfort, and value, with flexible payment options to fit every home.
   </p>
 </section>
 
 <section>
-  <h2>الأقسام</h2>
+  <h2>Our Categories</h2>
   <div class="grid">
-    <div class="card">صالونات</div>
-    <div class="card">غرف نوم</div>
-    <div class="card">غرف طعام</div>
+    <div class="card">Living Room Furniture</div>
+    <div class="card">Bedroom Sets</div>
+    <div class="card">Dining Room Furniture</div>
   </div>
 </section>
 
 <section>
-  <h2>تواصل معنا</h2>
-  <p style="text-align:center">📞 000-000-0000</p>
-  <p style="text-align:center">📍 Nashville, TN</p>
+  <h2>Why Choose Us</h2>
+  <div class="grid">
+    <div class="card">High Quality Materials</div>
+    <div class="card">Affordable Prices</div>
+    <div class="card">Flexible Payment Options</div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact Us</h2>
+  <div class="contact">
+    <p>📞 Phone: 000-000-0000</p>
+    <p>📍 Location: Nashville, TN</p>
+    <p>🕒 Store Hours: Mon – Sat | 10 AM – 7 PM</p>
+  </div>
 </section>
 
 <footer>
-  © 2026 La Rose Furniture
+  © 2026 La Rose Furniture. All rights reserved.
 </footer>
 
 </body>
