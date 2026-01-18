@@ -6,83 +6,106 @@
   <title>La Rose Furniture</title>
 
   <style>
-    body {
-      margin: 0;
+    body{
+      margin:0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #f5f5f5;
-      color: #111;
-      line-height: 1.6;
+      background:#f5f5f5;
+      color:#111;
+      line-height:1.6;
     }
 
-    header {
-      background: #111;
-      color: #fff;
-      padding: 70px 20px;
-      text-align: center;
+    header{
+      background:#111;
+      color:#fff;
+      text-align:center;
+      padding:0;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 42px;
+    .hero-img{
+      width:100%;
+      max-height:420px;
+      object-fit:cover;
+      display:block;
     }
 
-    header p {
-      margin-top: 10px;
-      font-size: 18px;
-      color: #ddd;
+    .hero-text{
+      padding:40px 20px;
     }
 
-    section {
-      background: #fff;
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 30px;
-      border-radius: 14px;
+    .hero-text h1{
+      margin:0;
+      font-size:42px;
     }
 
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
+    .hero-text p{
+      margin-top:10px;
+      font-size:18px;
+      color:#ddd;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+    section{
+      background:#fff;
+      max-width:1000px;
+      margin:30px auto;
+      padding:30px;
+      border-radius:14px;
     }
 
-    .card {
-      border: 1px solid #eee;
-      border-radius: 12px;
-      padding: 25px;
-      text-align: center;
-      font-weight: bold;
-      background: #fafafa;
+    h2{
+      text-align:center;
+      margin-bottom:20px;
     }
 
-    .contact {
-      text-align: center;
-      font-size: 16px;
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
     }
 
-    .contact p {
-      margin: 8px 0;
+    .card{
+      border:1px solid #eee;
+      border-radius:12px;
+      overflow:hidden;
+      background:#fafafa;
+      text-align:center;
+      font-weight:bold;
     }
 
-    footer {
-      text-align: center;
-      padding: 25px;
-      color: #777;
-      font-size: 14px;
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
     }
 
-    @media (max-width: 800px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-      header h1 {
-        font-size: 32px;
-      }
+    .card p{
+      margin:15px 0;
+    }
+
+    .contact{
+      text-align:center;
+      font-size:16px;
+    }
+
+    .contact p{
+      margin:10px 0;
+    }
+
+    a{
+      color:#111;
+      text-decoration:underline;
+    }
+
+    footer{
+      text-align:center;
+      padding:25px;
+      color:#777;
+      font-size:14px;
+    }
+
+    @media(max-width:800px){
+      .grid{grid-template-columns:1fr;}
+      .hero-text h1{font-size:32px;}
     }
   </style>
 </head>
@@ -90,8 +113,11 @@
 <body>
 
 <header>
-  <h1>La Rose Furniture</h1>
-  <p>Quality Furniture & Elegant Designs in Nashville</p>
+  <img src="hero.jpg" alt="Furniture Showroom" class="hero-img">
+  <div class="hero-text">
+    <h1>La Rose Furniture</h1>
+    <p>Quality Furniture & Elegant Designs in Nashville</p>
+  </div>
 </header>
 
 <section>
@@ -105,43 +131,61 @@
 <section>
   <h2>Our Categories</h2>
   <div class="grid">
-    <div class="card">Living Room Furniture</div>
-    <div class="card">Bedroom Sets</div>
-    <div class="card">Dining Room Furniture</div>
+    <div class="card">
+      <img src="sofa.jpg" alt="Living Room Furniture">
+      <p>Living Room Furniture</p>
+    </div>
+
+    <div class="card">
+      <img src="bedroom.jpg" alt="Bedroom Sets">
+      <p>Bedroom Sets</p>
+    </div>
+
+    <div class="card">
+      <img src="dining.jpg" alt="Dining Room Furniture">
+      <p>Dining Room Furniture</p>
+    </div>
   </div>
 </section>
 
 <section>
   <h2>Why Choose Us</h2>
   <div class="grid">
-    <div class="card">High Quality Materials</div>
-    <div class="card">Affordable Prices</div>
-    <div class="card">Flexible Payment Options</div>
+    <div class="card">
+      <p>High Quality Materials</p>
+    </div>
+    <div class="card">
+      <p>Affordable Prices</p>
+    </div>
+    <div class="card">
+      <p>Flexible Payment Options</p>
+    </div>
   </div>
 </section>
 
 <section>
   <h2>Contact Us</h2>
   <div class="contact">
-    <p>📞 Phone: 615-953-2932</p>
-    <p>📍 Location:4536 Nolensvile Pike, Nashville, TN 37211</p>
-    <p>🕒 Store Hours: Mon – Sat | 10 AM – 7 PM Sunday - 11 AM - 6 PM</p>
+    <p>
+      📞 Phone:
+      <a href="tel:16159532932">615-953-2932</a>
+    </p>
+
+    <p>
+      📍 Location:
+      <a href="https://www.google.com/maps?q=4536+Nolensville+Pike+Nashville+TN+37211" target="_blank">
+        4536 Nolensville Pike, Nashville, TN 37211
+      </a>
+    </p>
+
+    <p>
+      🕒 Store Hours:<br>
+      Mon – Sat | 10 AM – 7 PM<br>
+      Sunday: Cleaning Day
+    </p>
   </div>
 </section>
-<div class="card">
-  <img src="sofa.jpg" style="width:100%;border-radius:10px;">
-  <p>Living Room Furniture</p>
-</div>
 
-<div class="card">
-  <img src="bedroom.jpg" style="width:100%;border-radius:10px;">
-  <p>Bedroom Sets</p>
-</div>
-
-<div class="card">
-  <img src="dining.jpg" style="width:100%;border-radius:10px;">
-  <p>Dining Room Furniture</p>
-</div>
 <footer>
   © 2026 La Rose Furniture. All rights reserved.
 </footer>
