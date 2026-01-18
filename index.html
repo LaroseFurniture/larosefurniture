@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,45 +56,32 @@
       margin-bottom:25px;
     }
 
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:20px;
-    }
-
-    .card{
-      border:1px solid #eee;
-      border-radius:12px;
-      overflow:hidden;
-      background:#fafafa;
-      text-align:center;
-      font-weight:bold;
-    }
-
-    .card img{
-      width:100%;
-      height:220px;
-      object-fit:cover;
-      display:block;
-    }
-
-    .card p{
-      margin:15px 0;
-    }
-
-    /* Gallery */
+    /* Gallery layout */
     .gallery{
       display:grid;
       grid-template-columns:repeat(4,1fr);
       gap:15px;
     }
 
-    .gallery img{
+    .gallery-item{
+      border:1px solid #eee;
+      border-radius:12px;
+      overflow:hidden;
+      background:#fafafa;
+    }
+
+    .gallery-item img{
       width:100%;
       height:220px;
       object-fit:cover;
-      border-radius:12px;
-      border:1px solid #eee;
+      display:block;
+    }
+
+    .gallery-item p{
+      margin:10px;
+      text-align:center;
+      font-size:14px;
+      font-weight:bold;
     }
 
     .contact{
@@ -118,7 +106,6 @@
     }
 
     @media(max-width:900px){
-      .grid{grid-template-columns:1fr;}
       .gallery{grid-template-columns:1fr 1fr;}
       .hero-text h1{font-size:32px;}
     }
@@ -143,43 +130,49 @@
   </p>
 </section>
 
+<!-- Bedroom Gallery -->
 <section>
-  <h2>Our Categories</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="sofa1.jpg" alt="Modern living room furniture at La Rose Furniture Nashville">
-      <p>Living Room Furniture</p>
+  <h2>Bedroom Gallery</h2>
+  <div class="gallery">
+
+    <div class="gallery-item">
+      <img src="bedroom1.jpg" alt="Modern bedroom set at La Rose Furniture">
+      <p>Bedroom Set</p>
     </div>
-    <div class="card">
-      <img src="bedroom1.jpg" alt="Stylish bedroom furniture sets at La Rose Furniture Nashville">
-      <p>Bedroom Sets</p>
-    </div>
-    <div class="card">
-      <img src="dining1.jpg" alt="Elegant dining room furniture at La Rose Furniture Nashville">
-      <p>Dining Room Furniture</p>
-    </div>
+
   </div>
 </section>
 
+<!-- Living Room Gallery -->
 <section>
-  <h2>Gallery</h2>
+  <h2>Living Room Gallery</h2>
   <div class="gallery">
-    <img src="sofa1.jpg" alt="Living room sofa set at La Rose Furniture">
-    <img src="sofa2.jpg" alt="Modern sectional sofa available at La Rose Furniture">
-    <img src="bedroom1.jpg" alt="Bedroom furniture set with modern design at La Rose Furniture">
-    <img src="bedroom2.jpg" alt="Elegant bedroom furniture at La Rose Furniture Nashville">
-    <img src="dining1.jpg" alt="Dining table and chairs at La Rose Furniture">
-    <img src="dining2.jpg" alt="Modern dining room furniture set at La Rose Furniture Nashville">
+
+    <div class="gallery-item">
+      <img src="living1.jpg" alt="Living room furniture at La Rose Furniture">
+      <p>Living Room Set</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Dining Room Gallery -->
+<section>
+  <h2>Dining Room Gallery</h2>
+  <div class="gallery">
+
+    <div class="gallery-item">
+      <img src="dining1.jpg" alt="Dining room furniture at La Rose Furniture">
+      <p>Dining Room Set</p>
+    </div>
+
   </div>
 </section>
 
 <section>
   <h2>Contact Us</h2>
   <div class="contact">
-    <p>
-      📞 Phone:
-      <a href="tel:16159532932">615-953-2932</a>
-    </p>
+    <p>📞 Phone: <a href="tel:16159532932">615-953-2932</a></p>
 
     <p>
       📍 Location:
